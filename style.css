@@ -1,0 +1,310 @@
+:root {
+    --color-1: #1c7373;
+    --color-2: #005757;
+    --color-3: #223d58;
+    --color-4: #3e6389;
+    --color-5 : #4e42c0;
+    --color-6 : #6358DC;
+    --color-fondo: #F4F4F4;
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-gris: #3d3d3d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}*/
+
+.mainLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-fondo);
+    padding: 20px;
+}
+
+.contenedorLogin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cImgLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 640px;
+    padding: 10px;
+}
+
+.cLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    background-color: var(--color-blanco);
+    padding: 20px 25px;
+    border-radius: 8px;
+}
+
+.cTitulo{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.bTxtBienvenida{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.bTxtTitulo{
+    font-size: 46px;
+    font-weight: 900;
+    color: var(--color-5);
+}
+
+.cBtnGoogle{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.btnGoogle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-blanco);
+    border: none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.11);
+}
+
+.imgGmail{
+    width: 32px;
+    height: 32px;
+}
+
+.txtGmail{
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cOr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.lineaOr {
+    flex-grow: 1;
+    height: 0.5px;
+    background-color: #BFBFBF;
+}
+
+.or {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 15px;
+}
+
+.formLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cInputEmail {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #ECECEC;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.lEmail {
+    font-size: 30px;
+    color: var(--color-negro);
+    padding: 0px 20px;
+}
+
+.lIEmail {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.labelEmail {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-negro);
+}
+
+.inputEmail {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-negro);
+    background-color: #ECECEC;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+}
+
+.cInputPassword {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #ECECEC;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.lKey {
+    font-size: 30px;
+    color: var(--color-negro);
+    padding: 0px 20px;
+}
+
+.lIPassword {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.labelPassword {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-negro);
+}
+
+.cInputEye{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.inputPassword {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-negro);
+    background-color: #ECECEC;
+    border: none;
+    outline: none;
+    padding: 5px 45px 5px 0;
+}
+
+.btnEye{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lEye{
+    font-size: 18px;
+    color: var(--color-negro);
+}
+
+.cRecordar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.lRecuerdame{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-negro);
+}
+
+.linkOlv{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-5);
+}
+
+.btnLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-5);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.cRegistrarse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.linkRegistrarse{
+    text-decoration: none;
+    color: var(--color-5);
+}

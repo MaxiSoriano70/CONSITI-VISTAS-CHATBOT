@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="mainLogin">
+        <section class="contenedorLogin">
+            <article class="cImgLogin">
+                <img src="./img/imgLogin.svg" alt="imgLogin">
+            </article>
+            <article class="cLogin">
+                <div class="cTitulo">
+                    <span class="bTxtBienvenida">Bienvenido a</span>
+                    <span class="bTxtTitulo">Chatbot</span>
+                </div>
+                <div class="cBtnGoogle">
+                    <button class="btnGoogle"><img class="imgGmail" src="./img/gmail.png" alt="gmail"><span class="txtGmail">Login with Google</span></button>
+                </div>
+                <div class="cOr">
+                    <div class="lineaOr"></div>
+                    <span class="or">OR</span>
+                    <div class="lineaOr"></div>
+                </div>
+                <form class="formLogin" action="">
+                    <div class="cInputEmail">
+                        <i class="fa-solid fa-envelope lEmail"></i>
+                        <div class="lIEmail">
+                            <label class="labelEmail"  for="email">Email</label>
+                            <input class="inputEmail" type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="cInputPassword">
+                        <i class="fa-solid fa-key lKey"></i>
+                        <div class="lIPassword">
+                            <label class="labelPassword" for="password">Password</label>
+                            <div class="cInputEye">
+                                <input class="inputPassword" type="password" name="password" id="password">
+                                <button class="btnEye">
+                                    <i class="fa-solid fa-eye lEye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cRecordar">
+                        <span class="cInputCheck">
+                            <input type="checkbox" name="recuerdame" id="recuerdame">
+                            <label class="lRecuerdame" for="recuerdame">Recuérdame</label>
+                        </span>
+                        <a class="linkOlv" href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <button class="btnLogin">Login</button>
+                    <span class="cRegistrarse">¿No tienes cuenta? <a class="linkRegistrarse" href="#">Registrate</a></span>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
