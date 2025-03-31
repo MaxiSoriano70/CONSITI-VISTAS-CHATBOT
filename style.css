@@ -31,8 +31,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100vh;
     background-color: var(--color-fondo);
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .contenedorLogin{
@@ -46,8 +47,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 640px;
+    width: 30%;
     padding: 10px;
+}
+
+.imgPLogin{
+    width: 100%;
 }
 
 .cLogin{
@@ -55,9 +60,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     background-color: var(--color-blanco);
-    padding: 20px 25px;
+    padding: 30px 25px;
     border-radius: 8px;
 }
 
@@ -72,12 +77,12 @@
 }
 
 .bTxtBienvenida{
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
 }
 
 .bTxtTitulo{
-    font-size: 46px;
+    font-size: 36px;
     font-weight: 900;
     color: var(--color-5);
 }
@@ -88,7 +93,7 @@
     justify-items: center;
     width: 100%;
     padding: 10px 0;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .btnGoogle{
@@ -122,7 +127,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .lineaOr {
@@ -154,7 +159,7 @@
     background-color: #ECECEC;
     border-radius: 5px;
     padding: 10px 0px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .lEmail {
@@ -172,7 +177,7 @@
 .labelEmail {
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-negro);
 }
@@ -197,7 +202,7 @@
     background-color: #ECECEC;
     border-radius: 5px;
     padding: 10px 0px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .lKey {
@@ -215,7 +220,7 @@
 .labelPassword {
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-negro);
 }
@@ -259,7 +264,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .lRecuerdame{
@@ -290,7 +295,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .cRegistrarse{
@@ -301,10 +306,125 @@
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .linkRegistrarse{
     text-decoration: none;
     color: var(--color-5);
+    margin-left: 5px;
+}
+
+@media (max-width: 1000px) {
+    .cLogin{
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .cImgLogin{
+        display: none;
+    }
+
+    .cLogin{
+        width: 95%;
+    }
+
+    .bTxtBienvenida{
+        font-size: 24px;
+    }
+
+    .bTxtTitulo{
+        font-size: 28px;
+    }
+
+    .cBtnGoogle{
+        margin-top: 12px;
+    }
+
+    .btnGoogle{
+        padding: 10px 5px;
+    }
+
+    .imgGmail{
+        width: 24px;
+        height: 24px;
+    }
+
+    .txtGmail{
+        font-size: 12px;
+    }
+
+    .cOr {
+        margin-top: 12px;
+    }
+
+    .cInputEmail {
+        margin-top: 12px;
+    }
+
+    .lEmail {
+        font-size: 22px;
+        padding: 0px 20px;
+    }
+
+    .inputEmail {
+        font-size: 12px;
+    }
+
+    .labelEmail {
+        font-size: 12px;
+    }
+
+    .cInputPassword {
+        margin-top: 12px;
+    }
+
+    .lKey {
+        font-size: 22px;
+        padding: 0px 20px;
+    }
+
+    .labelPassword {
+        font-size: 12px;
+    }
+
+    .inputPassword {
+        font-size: 12px;
+    }
+
+    .lEye{
+        font-size: 14px;
+        color: var(--color-negro);
+    }
+
+    .cRecordar{
+        margin-top: 12px;
+    }
+
+    .lRecuerdame{
+        font-size: 12px;
+    }
+
+    .linkOlv{
+        font-size: 12px;
+    }
+
+    .btnLogin{
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .cRegistrarse{
+        font-size: 12px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .cRecordar{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
 }
