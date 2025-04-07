@@ -83,19 +83,21 @@
 }
 
 .mainLogin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 30px 20px;
 }
 
 .contenedorLogin{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    padding: 10px 0px;
 }
 
 .cImgLogin{
