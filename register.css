@@ -82,15 +82,8 @@
     border: #198754 solid 3px;
 }
 
-.btnLeftWhithe{
-    background-color: var(--color-fondo-white);
-    color: var(--color-5);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.btnLeftWhithe:hover{
-    background-color: var(--color-5);
-    color: var(--color-blanco);
+.borderWhite{
+    border: 2px solid var(--color-linea-dark);
 }
 
 .mainCRegister {
@@ -162,7 +155,7 @@
     margin-bottom: 20px;
 }
 
-.inputRegister{
+.inputRegisterWhite{
     width: 100%;
     height: 50px;
     font-size: 16px;
@@ -171,9 +164,23 @@
     font-weight: 400;
     border-radius: 10px;
     padding: 0px 10px;
-    border: 2px solid var(--color-linea-dark);
     background: transparent;
     outline: none;
+    color: var(--color-negro);
+}
+
+.inputRegisterDark{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background: transparent;
+    outline: none;
+    color: var(--color-blanco);
 }
 
 .labelRegister{
@@ -190,13 +197,39 @@
     transition: .3s;
 }
 
-.inputRegister:focus{
+.lblRWhite{
+    color: var(--color-negro);
+}
+
+.lblRDark{
+    color: var(--color-blanco);
+}
+
+.inputRegisterWhite:focus{
     border: 2px solid var(--color-fondo-dark);
 }
 
-.inputRegister:focus ~ .labelRegister,
-.inputRegister:valid ~ .labelRegister{
+.inputRegisterWhite:focus ~ .labelRegister,
+.inputRegisterWhite:valid ~ .labelRegister{
     top: 0;
+}
+
+.inputRegisterDark:focus{
+    border: 2px solid var(--color-fondo-white);
+}
+
+.inputRegisterDark:focus ~ .labelRegister,
+.inputRegisterDark:valid ~ .labelRegister{
+    top: 0;
+}
+
+.inputDateDark[type="date"]::-webkit-datetime-edit {
+    color: var(--color-blanco);
+}
+
+.inputDateDark[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
 }
 
 .btnRegistrarse{
@@ -280,9 +313,14 @@
     text-align: center;
 }
 
-.lIniciarSesion{
+.lIniciarSesionWhite{
     font-weight: 600;
-    color: var(--color-5)
+    color: var(--color-5);
+}
+
+.lIniciarSesionDark{
+    font-weight: 600;
+    color: var(--color-3);
 }
 
 .articleFRegister{
@@ -297,4 +335,20 @@
     background-size: cover;
     border-radius: 24px;
     padding-left: 5px;
+}
+
+@media (max-width: 1110px) {
+    .divRegister{
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .articleRegister{
+        width: 100%;
+    }
+
+    .articleFRegister{
+        display: none;
+    }
 }
