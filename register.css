@@ -75,11 +75,11 @@
 }
 
 .dangerInput{
-    border: #DC3545 solid 3px;
+    border: #DC3545 solid 3px !important;
 }
 
 .successInput{
-    border: #198754 solid 3px;
+    border: #198754 solid 3px !important;
 }
 
 .borderWhite{
@@ -230,6 +230,18 @@
 .inputDateDark[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
     cursor: pointer;
+}
+
+.btnContra {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
 }
 
 .btnRegistrarse{
