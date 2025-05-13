@@ -22,6 +22,7 @@
     box-sizing: border-box;
 }
 
+
 .fondoWhite{
     background-color: var(--color-fondo-white);
 }
@@ -72,6 +73,16 @@
 
 .shadowColorDark{
     box-shadow: 0px 4px 15px 0px rgba(255, 255, 255, 0.2);
+}
+
+.btnGoogleDark{
+    color: var(--color-blanco);
+    background-color: var(--color-5);
+}
+
+.btnGoogleLigth{
+    color: var(--color-negro);
+    background-color: var(--color-4);
 }
 
 .dangerInput{
@@ -129,7 +140,7 @@
     font-style: normal;
     font-weight: 600;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .txtRegister{
@@ -138,7 +149,7 @@
     font-style: normal;
     font-weight: 400;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .formRegister{
@@ -152,7 +163,7 @@
 .cInputRegister{
     width: 100%;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .inputRegisterWhite{
@@ -258,7 +269,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .cOr {
@@ -266,7 +277,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 15px;
+    margin: 0px;
 }
 
 .lineaOr {
@@ -287,8 +298,8 @@
     align-items: center;
     justify-items: center;
     width: 100%;
-    padding: 10px 0;
-    margin-bottom: 15px;
+    padding: 7px 0;
+    margin: 0px 0px 5px 0px;
 }
 
 .imgGmail{
@@ -301,7 +312,7 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .btnGoogle{
@@ -341,7 +352,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/img/fRegister.jpg');
+    background-image: url('../img/fRegister.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
