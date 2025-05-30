@@ -4,7 +4,8 @@
     --color-3: #A484E8;
     --color-4: #D5C1FF;
     --color-5 : #4e42c0;
-    --color-6 : #cbd3fa;
+    --color-6 : #5c51da;
+    --color-7 : #cbd3fa;
     --color-fondo-white: #F4F4F4;
     --color-mode-white: #FFF;
     --color-linea-white: #BFBFBF;
@@ -20,6 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .fondoWhite{
@@ -108,6 +110,9 @@
     padding: 10px 0px;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .chatSidebarLogo{
@@ -129,7 +134,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
     gap: 10px;
 }
 
@@ -148,7 +153,6 @@
     padding: 12px;
     font-size: 24px;
     color: var(--color-5);
-    background: var(--color-gris);
     border-radius: 8px;
     border: none;
     font: inherit;
@@ -182,6 +186,8 @@
     color: var(--color-blanco);
     opacity: 0;
     visibility: hidden;
+    transform-origin: left bottom;
+    transition:  all .15s ease-in-out;
 }
 
 .btnSidebarMenu:hover::before{
@@ -231,6 +237,7 @@
     visibility: hidden;
     transform: scale(.9);
     transform-origin: left bottom;
+    transition:  all .15s ease-in-out;
 }
 
 .chatSidebarProfileDropdown.active{
@@ -256,6 +263,247 @@
     margin-right: 12px;
     font-size: 16px;
 }
+
+.chatContent{
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    border-right: solid 1px var(--color-linea-white);
+}
+
+.contentSidebar{
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.contentSidebarTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.containerButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.btn-personalizado1 {
+    background-color: var(--color-5);
+    color: var(--color-blanco);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-personalizado1:hover {
+    background-color: var(--color-6);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-personalizado1:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-personalizado2 {
+    background-color: var(--color-5);
+    color: var(--color-blanco);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-personalizado2:hover {
+    background-color: var(--color-6);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-personalizado2:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contentSidebarButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gris);
+    padding: 5px;
+    gap: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btnSidebar{
+    width: 50%;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btnSidebar.active{
+    background-color: var(--color-5);
+    color: var(--color-blanco);
+}
+
+.btnSidebar:hover {
+    background-color: var(--color-6);
+    color: var(--color-blanco);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btnSidebar:hover .nCantidad {
+    background-color: var(--color-4);
+    color: var(--color-5);
+}
+
+.btnSidebar:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nCantidad{
+    background-color: var(--color-fondo-white);
+    border-radius: 5px;
+    padding: 3.5px;
+    font-size: 10px;
+}
+
+.nCantidad.active{
+    background-color: var(--color-4);
+    color: var(--color-5);
+}
+
+.contentSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--color-gris);
+}
+
+.containerInput {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-blanco);
+    border-radius: 5px;
+    padding: 8px 10px;
+    flex: 1;
+}
+
+.containerInput i {
+    color: var(--color-5);
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.containerInput input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.contentHistoryChat{
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+.historyChat{
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--color-blanco);
+}
+
+.historyChat:hover{
+    background-color: var(--color-4);
+}
+
+.headerHistoryChat{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.historyChatTitle {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.historyChatTime {
+    color: var(--color-mode-dark);
+    white-space: nowrap;
+}
+
+.bodyHistoryChat{
+    flex: 1;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.historyChatTxt {
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
 
 /*Termina chatSidebar*/
 
