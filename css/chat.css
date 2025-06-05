@@ -612,6 +612,42 @@
     margin-top: 15px;
 }
 
+.contentHistoryChat.white::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contentHistoryChat.white::-webkit-scrollbar-track {
+    background: var(--color-blanco);
+    border-radius: 10px;
+}
+
+.contentHistoryChat.white::-webkit-scrollbar-thumb {
+    background-color: var(--color-linea-white);
+    border-radius: 10px;
+}
+
+.contentHistoryChat.white::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-mode-dark);
+}
+
+.contentHistoryChat.black::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contentHistoryChat.black::-webkit-scrollbar-track {
+    background: var(--color-mode-dark);
+    border-radius: 10px;
+}
+
+.contentHistoryChat.black::-webkit-scrollbar-thumb {
+    background-color: var(--color-linea-dark);
+    border-radius: 10px;
+}
+
+.contentHistoryChat.black::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-gris);
+}
+
 .historyChat{
     width: 100%;
     min-height: 120px;
@@ -706,8 +742,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: var(--color-blanco);
     padding: 10px;
+}
+
+.vWhite{
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+.vDark{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
 }
 
 .sectionBody{
@@ -718,10 +763,53 @@
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    background-color: var(--color-fondo-white);
     border-radius: 10px 10px 0 0;
     padding: 10px 20px;
     gap: 10px;
+}
+
+.sectionBody.white::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sectionBody.white::-webkit-scrollbar-track {
+    background: var(--color-blanco);
+    border-radius: 10px;
+}
+
+.sectionBody.white::-webkit-scrollbar-thumb {
+    background-color: var(--color-linea-white);
+    border-radius: 10px;
+}
+
+.sectionBody.white::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-mode-dark);
+}
+
+.sectionBody.black::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sectionBody.black::-webkit-scrollbar-track {
+    background: var(--color-mode-dark);
+    border-radius: 10px;
+}
+
+.sectionBody.black::-webkit-scrollbar-thumb {
+    background-color: var(--color-linea-dark);
+    border-radius: 10px;
+}
+
+.sectionBody.black::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-gris);
+}
+
+.sBodyWhite{
+    background-color: var(--color-fondo-white);
+}
+
+.sBodyDark{
+    background-color: var(--color-fondo-dark);
 }
 
 .separadorDay {
@@ -772,6 +860,14 @@
     padding: 5px;
 }
 
+.yHeaderWhite{
+    color: var(--color-negro);
+}
+
+.yHeaderDark{
+    color: var(--color-blanco);
+}
+
 .spanYou{
     font-size: 14px;
     font-weight: bold;
@@ -785,9 +881,18 @@
 
 .youFooter{
     width: 100%;
-    background-color: var(--color-blanco);
     border-radius: 0px 10px 10px 10px;
     padding: 10px;
+}
+
+.yFooterWhite{
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+.yFooterDark{
+    background-color: var(--color-mode-dark);
+    color: var(--color-blanco);
 }
 
 .contentEdit{
@@ -798,7 +903,7 @@
     padding: 5px;
 }
 
-.btnEdit{
+.btnEdit.white{
     background-color: var(--color-blanco);
     color: var(--color-5);
     border: none;
@@ -811,7 +916,26 @@
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.btnEdit:hover {
+.btnEdit.white:hover {
+    background-color: var(--color-5);
+    color: var(--color-blanco);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btnEdit.dark{
+    background-color: var(--color-mode-dark);
+    color: var(--color-blanco);
+    border: none;
+    padding: 5px 7.5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btnEdit.dark:hover {
     background-color: var(--color-5);
     color: var(--color-blanco);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -951,14 +1075,12 @@
     align-items: start;
     justify-content: start;
     gap: 10px;
-    background-color: var(--color-fondo-white);
     border-radius: 0 0 10px 10px;
     padding: 10px 20px;
 }
 
 .inputSend {
     flex: 1;
-    background-color: var(--color-blanco);
     border-radius: 5px;
     padding: 10px;
     border: none;
@@ -966,7 +1088,17 @@
     font-size: 16px;
 }
 
-.btnEnviar {
+.iSendWhite{
+    background-color: var(--color-fondo-white);
+    color: var(--color-negro);
+}
+
+.iSendDark{
+    background-color: var(--color-mode-dark);
+    color: var(--color-blanco);
+}
+
+.btnEnviar.white {
     background-color: var(--color-blanco);
     color: var(--color-5);
     border: none;
@@ -979,13 +1111,32 @@
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.btnEnviar:hover {
+.btnEnviar.white:hover {
     background-color: var(--color-5);
     color: var(--color-blanco);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-.btnFile {
+.btnEnviar.dark {
+    background-color: var(--color-mode-dark);
+    color: var(--color-blanco);
+    border: none;
+    padding: 7.5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btnEnviar.dark:hover {
+    background-color: var(--color-5);
+    color: var(--color-blanco);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btnFile.white {
     background-color: var(--color-blanco);
     color: var(--color-5);
     border: none;
@@ -998,13 +1149,30 @@
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.btnFile:hover {
+.btnFile.white:hover {
     background-color: var(--color-5);
     color: var(--color-blanco);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+.btnFile.dark {
+    background-color: var(--color-mode-dark);
+    color: var(--color-blanco);
+    border: none;
+    padding: 7.5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
 
+.btnFile.dark:hover {
+    background-color: var(--color-5);
+    color: var(--color-blanco);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
 
 /*Comienza conversation*/
 
